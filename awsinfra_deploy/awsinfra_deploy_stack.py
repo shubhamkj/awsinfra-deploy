@@ -59,7 +59,7 @@ class AwsinfraDeployStack(Stack):
             owner='shubhamkj',  # Replace with your GitHub username
             repo='awsinfra-deploy',  # Replace with your repository name
             branch='master',
-            oauth_token=SecretValue.secrets_manager('github-token'),
+            oauth_token=SecretValue.secrets_manager('cdk-infra-june26'),
             output=source_output
         )
 
